@@ -1,4 +1,4 @@
-# Cách dùng
-   Chạy file main.py
-# Nếu muốn nghiên cứu file data
-   Giải nén archive.zip
+# How to use
+Run main.py file
+# If you want to study the data file
+Unzip archive.zip
