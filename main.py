@@ -13,7 +13,7 @@ import math
 
 
 # Running real time from webcam
-cap = cv2.VideoCapture('fire2.mp4')
+cap = cv2.VideoCapture('fire4.mp4')
 model = YOLO('fire.pt')
 
 
@@ -39,8 +39,11 @@ while True:
                 cvzone.putTextRect(frame, f'{classnames[Class]} {confidence}%', [x1 + 8, y1 + 100],
                                    scale=1.5,thickness=2)
 
-
+    
 
 
     cv2.imshow('frame',frame)
-    cv2.waitKey(1)
+    if cv2.waitKey(1) == ord('q'):
+        break  
+cap.release()
+cv2.destroyAllWindows()
